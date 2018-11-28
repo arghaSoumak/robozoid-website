@@ -1,0 +1,99 @@
+/* header */
+header 
+    position: relative
+    .header-bg 
+        height: 100%
+        width: 100%
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: top
+        @media only screen and (max-width: $mobile)
+            background-position: right
+        position: absolute
+        top: 0
+        /* filter: blur(1px) */
+        z-index: -5
+
+
+
+    .header-content 
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        color: #fff
+        text-align: center
+
+
+        h2 
+            font-family: 'Press Start 2P', cursive
+            font-size: 25px
+            margin-bottom: 25px
+            @media only screen and (max-width: $tablet)
+                font-size: 20px
+            @media only screen and (max-width: $mobile)
+                font-size: 16px
+
+        h1 
+            font-family: 'Press Start 2P', cursive
+            font-size: 60px
+            text-align: center
+            @media only screen and (max-width: $tablet)
+                font-size: 40px
+            @media only screen and (max-width: $mobile)
+                font-size: 25px
+                letter-spacing: 10px
+            text-transform: uppercase
+            letter-spacing: 25px
+
+
+#sidebar_menu
+    position: fixed
+    top: 0
+    left: 0
+    background-color: #ffffff
+    height: 100vh
+    width: 100vw
+    text-align: center
+    padding: 50px
+    li
+        margin: 30px 0
+        a
+            font-family: 'Montserrat', sans-serif
+            font-size: 16px
+            color: $text-color
+
+
+
+.nav
+    height: 60px
+    background-color: $white
+    position: fixed
+    top: 0
+    z-index: 500
+    box-shadow: 0 3px 8px -5px rgba(0,0,0,0.4)
+    width: 100%
+    nav 
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        img
+            height: 40px
+
+        .menu_icon
+            display: none
+            @media only screen and (max-width: $tablet)
+                display: block 
+        ul 
+            display: flex
+            @media only screen and (max-width: $tablet)
+                display: none
+            li 
+                margin: 0 15px
+                a 
+                    color: $text-color
+                    font-family: 'Montserrat', sans-serif
+                    font-size: 13px
+                    text-transform: uppercase
+                    font-weight: 600

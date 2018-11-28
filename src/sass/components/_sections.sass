@@ -1,0 +1,187 @@
+//counter section
+#counter 
+    padding: 40px 100px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top
+    background-attachment: fixed
+    color: #fff
+    .grid-container
+        text-align: center
+        .item
+            margin: 20px 0 
+            h1 
+                font-family: 'Montserrat', sans-serif
+                font-size: 70px
+                @media only screen and (max-width: $tablet)
+                    font-size: 60px
+                font-weight: 300
+            p 
+                font-family: 'Montserrat', sans-serif
+                font-size: 20px
+                @media only screen and (max-width: $tablet)
+                    font-size: 18p
+                @media only screen and (max-width: $mobile)
+                    font-size: 16px
+
+
+
+//projects slider
+#projects 
+    padding: 55px 30px 30px
+    background-color: #ebebeb
+    @media only screen and (max-width: $tablet)
+        padding: 50px 30px 20px
+    @media only screen and (max-width: $mobile)
+        padding: 50px 10px 20px
+    
+    
+
+    .slider
+        overflow-x: hidden
+        position: relative
+        padding: 0 40px  
+        height: 235px
+        @media only screen and (max-width: $mobile)
+            height: 185px
+        .arrow
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            position: absolute
+            top: 0   
+            cursor: pointer
+            width: 50px
+            background-color: inherit
+            outline: none
+
+            .arrow-wrapper
+                @media only screen and (max-width: $mobile)
+                    height: 40px
+                    width: 40px
+                height: 50px
+                width: 50px
+                display: flex
+                align-items: center
+                justify-content: center
+                background-color: $white
+                color: $text-color
+                border-radius: 1000px
+                box-shadow: 0 5px 10px -2px rgba(0,0,0,0.5)
+
+
+        .prev-arrow
+            left: 0
+        .next-arrow
+            right: 0
+
+        .slider-wrapper
+            height: 200px
+            @media only screen and (max-width: $mobile)
+                height: 150px 
+            display: flex
+            position: absolute
+            transition: all 300ms ease-in-out
+ 
+            li 
+                margin: 0 20px
+                @media only screen and (max-width: $mobile)
+                    margin: 0 10px
+                img 
+                    height: 100% 
+                    width: 300px
+                    @media only screen and (max-width: $mobile)
+                        width: 250px
+                h1
+                    font-family: 'Montserrat', sans-serif
+                    font-size: 16px
+                    color: $text-color
+                    text-align: center
+                    font-weight: 500
+                    margin-top: 8px
+                    z-index: 50
+                    @media only screen and (max-width: $mobile)
+                        font-size: 13px 
+
+
+    
+    
+    
+    
+//objective section
+#objectives 
+    padding: 55px 0
+    .container  
+        .grid-container 
+            .item 
+                text-align: center
+                img 
+                    height: auto
+                    width: 100%
+                p 
+                    font-family: 'Montserrat', sans-serif
+                    font-size: 14px
+                    font-weight: 400
+                    color: $text-color
+                    @media only screen and (max-width: $tablet)
+                        font-size: 13px
+                    @media only screen and (max-width: $mobile)
+                        font-size: 12px
+                h2 
+                    font-family: 'Montserrat', sans-serif
+                    font-size: 20px
+                    font-weight: 600
+                    color: $text-color
+                    margin: 10px 0 8px
+                    @media only screen and (max-width: $tablet)
+                        font-size: 20px
+
+
+        
+        
+
+            
+
+
+            
+
+// resources section
+#resources
+    padding: 55px 80px
+    @media only screen and (max-width: $tablet)
+        padding: 55px 50px
+    @media only screen and (max-width: $mobile)
+        padding: 55px 0px
+    .grid-container 
+        grid-template-columns: repeat(2, 1fr)
+        @media only screen and (max-width: $tablet)
+            grid-template-columns: repeat(2, 1fr)
+        @media only screen and (max-width: $mobile)
+            grid-template-columns: repeat(1, 1fr) 
+        
+        .item
+            h1
+                font-size: 16px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+            a
+                font-size: 13px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+.load-more
+    font-size: 16px
+    font-family: 'Montserrat', sans-serif
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 35px
+    &:hover > i
+        transition: all 200ms linear
+        transform: translateX(5px)
+
+    a
+        color: $text-color
+        font-weight: 500
+         
+        

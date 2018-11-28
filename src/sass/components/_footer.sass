@@ -1,0 +1,48 @@
+
+#footer 
+    background-color: #101010
+    width: 100%
+    padding: 50px 0 8px
+    @media only screen and (max-width: $mobile)
+        padding: 40px 20px 10px
+    .footer-container  
+        display: grid
+        grid-gap: 30px
+        grid-template-columns: repeat(2, 1fr)
+        @media only screen and (max-width: $mobile)
+            grid-template-columns: repeat(1, 1fr)
+
+        .links 
+            li 
+                margin: 8px 0
+
+                a 
+                    color: #fff
+                    font-size: 16px
+                    @media only screen and (max-width: $mobile)
+                        font-size: 14px
+                    font-family: 'Montserrat', sans-serif
+
+
+
+    .footer-contact 
+        color: #fff
+        font-size: 14px
+        font-family: 'Montserrat', sans-serif
+        @media only screen and (max-width: $mobile)
+            font-size: 12px
+        li 
+            display: flex
+            align-items: center
+            margin: 5px 0
+        svg 
+            fill: #fff
+
+
+    h1 
+        font-family: 'Montserrat', sans-serif
+        text-align: center
+        color: #fff
+        font-size: 12px
+        font-weight: 300
+        margin: 25px 0 0

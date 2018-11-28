@@ -1,0 +1,231 @@
+
+// project page
+#projects-section 
+    padding: 50px 0
+    li 
+        margin: 40px 0
+        @media only screen and (max-width: $mobile)
+            margin: 0 0 250px
+        display: grid
+        align-items: center
+
+        .content 
+            background-color: #E8E8E8
+            padding: 80px 180px
+            @media only screen and (max-width: $tablet)
+                padding: 60px 100px
+            width: 100%
+            position: relative
+            h1 
+                font-family: 'Montserrat', sans-serif
+                color: #333
+                font-size: 22px
+            p 
+                font-family: 'Montserrat', sans-serif
+                color: #555
+                font-size: 14px
+                margin: 10px 0 0
+            .status
+                margin: 20px 0 0
+                font-family: 'Montserrat', sans-serif
+                font-size: 13px
+                background-color: #656565
+                color: $white
+                padding: 5px 10px
+                display: inline-block
+
+        span 
+            font-size: 120px
+            color: #333
+            position: absolute
+            top: -70px
+            z-index: 100
+            font-weight: 900
+
+        .left 
+            left: 150px
+            @media only screen and (max-width: $mobile)
+                left: 50px
+        .right 
+            right: 150px
+            @media only screen and (max-width: $mobile)
+                right: 50px
+
+
+        img 
+            height: 230px  
+            border: 10px solid #fff
+            box-shadow: 0 10px 25px -8px rgba(0,0,0,0.4)
+            @media only screen and (max-width: $tablet)
+                height: 200px
+            position: absolute
+            transform: translateY(-50%)
+            @media only screen and (max-width: $mobile)
+                transform: translateX(-50%)
+            z-index: 50
+
+        .left-img 
+            left: -80px
+            top: 50%
+            @media only screen and (max-width: $tablet)
+                left: -50px
+            @media only screen and (max-width: $mobile)
+                left: 50%
+                top: -30px
+        .right-img 
+            right: -80px
+            top: 50%
+            @media only screen and (max-width: $tablet)
+                right: -50px
+            @media only screen and (max-width: $mobile)
+                left: 50%
+                top: 220px
+
+
+    .left-grid 
+        grid-template-columns: 1.5fr 1fr
+        @media only screen and (max-width: $mobile)
+            grid-template-columns: 1fr
+    .right-grid 
+        grid-template-columns: 1fr 1.5fr
+        @media only screen and (max-width: $mobile)
+            grid-template-columns: 1fr
+
+    
+     
+    
+    
+// gallery page
+#gallery-section 
+    .gallery-container 
+        display: grid
+        grid-template-columns: 1fr 1fr
+        @media only screen and (max-width: $mobile)
+            grid-template-columns: 1fr
+        padding: 50px 150px 
+        @media only screen and (max-width: $tablet)
+            padding: 50px 60px 
+        @media only screen and (max-width: $mobile)
+            padding: 50px 40px
+        grid-gap: 30px
+
+
+        .gallery-item 
+            height: 100%
+            position: relative
+
+            img
+                height: 100% 
+                width: 100%
+
+            h1 
+                background-color: rgba(0,0,0,0.7)
+                height: 40px
+                width: 100%
+                position: absolute
+                bottom: 0
+                left: 0
+                font-family: 'Montserrat', sans-serif
+                color: #fff
+                line-height: 40px
+                padding: 0 30px
+                font-size: 15px
+                font-weight: 400
+
+
+#gallery_page
+    padding: 40px 0
+
+    h1
+        text-align: center
+        font-size: 30px
+        font-family: 'Montserrat', sans-serif
+        color: $text-color
+        font-weight: 500
+    h2
+        text-align: center
+        font-size: 16px
+        font-family: 'Montserrat', sans-serif
+        color: #757575
+        font-weight: 500
+        margin: 5px 0 30px
+
+
+
+         
+// team page
+#teams
+    .grid-container
+        grid-template-columns: repeat(3, 1fr)
+        padding: 50px  
+        @media only screen and (max-width: $tablet)
+            grid-template-columns: repeat(2, 1fr)
+            padding: 50px 40px
+        @media only screen and (max-width: $mobile)
+            grid-template-columns: repeat(1, 1fr)
+            padding: 50px 20px
+        
+        
+        .item
+            text-align: center
+            font-family: 'Montserrat', sans-serif
+
+            img
+                height: auto
+                width: 100%
+            h3
+                font-weight: 500
+                font-size: 20px
+                margin: 5px 0 0
+            h4
+                font-weight: 400
+                font-size: 14px
+
+
+
+
+//resources
+#resources-section
+    padding: 50px 0
+    .grid-container
+        grid-template-columns: repeat(2, 1fr)
+        @media only screen and (max-width: $tablet)
+            grid-template-columns: repeat(2, 1fr)
+        @media only screen and (max-width: $mobile)
+            grid-template-columns: repeat(1, 1fr)
+
+        .item
+            h1
+                font-size: 16px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+            a
+                font-size: 13px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+
+        
+
+
+//loading
+#loading 
+    display: flex
+    height: 100vh
+    position: fixed
+    top: 0
+    width: 100vw
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    img
+        height: 150px 
+    h1
+        font-family: 'Montserrat', sans-serif
+        margin: 15px 0 0
+        font-size: 20px 
+        font-weight: 600
+
+    h2
+        font-family: 'Montserrat', sans-serif
+        font-size: 15px 
+        font-weight: 400
