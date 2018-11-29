@@ -6,10 +6,11 @@ import Gallery from './components/gallery/'
 import GalleryPage from './components/gallery/GalleryPage'
 import Resources from './components/resources/'
 import Teams from './components/teams/'
+import About from './components/About'
 import * as serviceWorker from './serviceWorker'
 import Provider from './Provider'
 
-import './App.css'
+import './sass/app.sass'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const root = document.getElementById('root')
@@ -23,6 +24,7 @@ ReactDOM.render(
         <Route path="/gallery/:id" exact component={GalleryPage} />
         <Route path="/resources" exact component={Resources} />
         <Route path="/teams" exact component={Teams} />
+        <Route path="/about" exact component={About} />
       </Switch>
     </Router>
   </Provider>,

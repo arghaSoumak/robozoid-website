@@ -69,7 +69,7 @@ export default class Footer extends Component {
                 <Link to="/teams">Teams</Link>
               </li>
               <li>
-                <Link to="/">About</Link>
+                <Link to="/about">About</Link>
               </li>
             </ul>
             <div className="footer-contact">

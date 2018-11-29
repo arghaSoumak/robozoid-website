@@ -35,7 +35,7 @@ export default class Navigatio extends React.Component {
               <Link to="/teams">Teams</Link>
             </li>
             <li>
-              <Link to="/">About</Link>
+              <Link to="/about">About</Link>
             </li>
           </ul>
           <div className="menu_icon" onClick={this.open}>
@@ -60,7 +60,7 @@ export default class Navigatio extends React.Component {
                 <Link to="/teams">Teams</Link>
               </li>
               <li>
-                <Link to="/">About</Link>
+                <Link to="/about">About</Link>
               </li>
             </div>
           ) : null}

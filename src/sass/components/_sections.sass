@@ -155,20 +155,34 @@
         padding: 55px 0px
     .grid-container 
         grid-template-columns: repeat(2, 1fr)
+        align-items: center
+        grid-gap: 20px 50px
+        justify-items: center
         @media only screen and (max-width: $tablet)
-            grid-template-columns: repeat(2, 1fr)
+            grid-template-columns: repeat(1, 1fr)
         @media only screen and (max-width: $mobile)
             grid-template-columns: repeat(1, 1fr) 
         
         .item
-            h1
-                font-size: 16px
-                font-family: 'Montserrat', sans-serif
-                font-weight: 500
-            a
-                font-size: 13px
-                font-family: 'Montserrat', sans-serif
-                font-weight: 500
+            border: 1px solid #787878 
+            padding: 10px
+            width: 100%
+            .expand_section
+                .expand_header
+                    cursor: pointer
+                    display: flex
+                    align-items: center
+                    justify-content: space-between 
+                    h1
+                        font-size: 15px
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                .expand_details
+                    word-break: break-all
+                    a
+                        font-size: 13px
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
 .load-more
     font-size: 16px
     font-family: 'Montserrat', sans-serif
