@@ -50,7 +50,7 @@ class Provider extends React.Component {
                                 })
                                 // this.setState({ resources })
                                 db.collection('teams')
-                                    .orderBy('position')
+                                    .orderBy('id')
                                     .get()
                                     .then(snap => {
                                         let teams = []
@@ -79,7 +79,7 @@ class Provider extends React.Component {
             .catch(err => console.log(err))
     }
     render() {
-        console.log(this.state)
+        // console.log(this.state)
         if (
             this.state.projects.length === 0 &&
             this.state.gallery.length === 0 &&

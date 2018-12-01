@@ -4,6 +4,9 @@ import about from '../img/about.jpg'
 import Footer from './Footer'
 
 export default class About extends Component {
+    componentDidMount = () => {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
             <div>

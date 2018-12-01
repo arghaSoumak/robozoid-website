@@ -6,6 +6,9 @@ import Store from '../../Store'
 import ExpandSection from './ExpandSection'
 class Resources extends React.Component {
     static contextType = Store
+    componentDidMount = () => {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
             <React.Fragment>

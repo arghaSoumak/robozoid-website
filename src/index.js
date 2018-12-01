@@ -7,7 +7,6 @@ import GalleryPage from './components/gallery/GalleryPage'
 import Resources from './components/resources/'
 import Teams from './components/teams/'
 import About from './components/About'
-import * as serviceWorker from './serviceWorker'
 import Provider from './Provider'
 
 import './sass/app.sass'
@@ -30,5 +29,3 @@ ReactDOM.render(
   </Provider>,
   root
 )
-
-serviceWorker.unregister()

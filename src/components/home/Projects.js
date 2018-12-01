@@ -8,7 +8,7 @@ export default class Projects extends Component {
     index: 0
   }
 
-  next = () => {
+  next = () => { 
     const index = this.state.index + 1
     this.setState({ index })
   }
