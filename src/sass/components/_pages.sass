@@ -199,10 +199,12 @@
 
         .item
             width: 100%
-            border: 1px solid #787878 
-            padding: 10px
             .expand_section
-                
+                // border: 1px solid #787878 
+                background-color: #051745
+                border-radius: 5px
+                color: #ffffff
+                padding: 15px 20px
                 .expand_header
                     cursor: pointer
                     display: flex
@@ -211,13 +213,20 @@
                     h1
                         font-size: 15px
                         font-family: 'Montserrat', sans-serif
-                        font-weight: 500
+                        font-weight: 300
                 .expand_details
                     word-break: break-all
-                    a
-                        font-size: 13px
-                        font-family: 'Montserrat', sans-serif
-                        font-weight: 500
+                    padding: 10px 5px
+                    .link
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        a
+                            color: #ffffff
+                            font-size: 13px
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 400
+                            margin-left: 5px
 
         
 
@@ -233,7 +242,7 @@
     align-items: center
     justify-content: center
     img
-        height: 150px 
+        height: 120px 
     h1
         font-family: 'Montserrat', sans-serif
         margin: 15px 0 0

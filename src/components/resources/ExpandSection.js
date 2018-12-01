@@ -23,9 +23,10 @@ class ExpandSection extends React.Component {
                         <div className="expand_details">
                             {this.props.resource.resource_links.map(
                                 (link, i) => (
-                                    <h1>
+                                    <div className="link">
+                                        <Icon>keyboard_arrow_right</Icon>
                                         <a href={link}>{link}</a>
-                                    </h1>
+                                    </div>
                                 )
                             )}
                         </div>
